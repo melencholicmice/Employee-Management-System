@@ -109,15 +109,11 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "pillow"
-version = "9.4.0"
+version = "8.4.0"
 description = "Python Imaging Library (Fork)"
 category = "main"
 optional = false
-python-versions = ">=3.7"
-
-[package.extras]
-docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-inline-tabs", "sphinx-issues (>=3.0.1)", "sphinx-removed-in", "sphinxext-opengraph"]
-tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
+python-versions = ">=3.6"
 
 [[package]]
 name = "pluggy"
@@ -209,7 +205,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "ebed026f6a9b9bdc20e297fdfc2ebc0344190442cb15134924d21337fd2bdbbd"
+content-hash = "fbcb4da0011ad6397f1837fcfde49ae4ba338f7355f9e65b7c33f637c59aa95c"
 
 [metadata.files]
 asgiref = []
