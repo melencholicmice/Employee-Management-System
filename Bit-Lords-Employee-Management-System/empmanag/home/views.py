@@ -109,6 +109,7 @@ def dashboard(request,emp_id):
     
     preMonthBonus=employee.employee.bonus
     context={'date':date,'time':time,'status':status,'task':task,'preMonth':preMonth,'year':year,'preMonthSalary':preMonthSalary,'preMonthBonus':preMonthBonus,'notices':notices}
+    request.user.id = emp_id
     return render(request,'dashboard.html',context)
 
 def attandance(request,emp_id):
@@ -184,4 +185,5 @@ def update(request,emp_id):
         return redirect(request.META.get('HTTP_REFERER'))
 
     else:
+        request.user.id = emp_id
         return render(request,'update.html')
